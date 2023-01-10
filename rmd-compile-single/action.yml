@@ -1,27 +1,27 @@
 # https://github.blog/changelog/2021-08-25-github-actions-reduce-duplication-with-action-composition/
 
-name: "Compile"
-description: "Compile"
+#name: "Compile"
+#description: "Compile"
 
-inputs:
-  input_rmd_path:
-    description: "Filename input path RmD"
-    required: true
-  input_rmd_file:
-    description: "Filename input file Rmd"
-    required: true
+#inputs:
+#  input_rmd_path:
+#    description: "Filename input path RmD"
+#    required: true
+#  input_rmd_file:
+#    description: "Filename input file Rmd"
+#    required: true
 
 # https://github.com/r-lib/actions/tree/v2/examples#render-rmarkdown
 
-runs:
-  render-rmarkdown:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
+#runs:
+#  render-rmarkdown:
+#    runs-on: ubuntu-latest
+##    steps:
+#      - name: Checkout repo
+#        uses: actions/checkout@v3
+#        with:
+#          fetch-depth: 0
+#
 #      - uses: r-lib/actions/setup-pandoc@v2
 #
 #      - uses: r-lib/actions/setup-r@v2
